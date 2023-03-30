@@ -1,0 +1,30 @@
+SolomonPotvinBengio/rc_201.1.txt |   sequence | open (improved init) |     449.05 |       0.00 | 14 18 13 9 5 4 6 8 7 16 19 11 17 1 12 3 10 2 15 | seed: -6909878493014770671 | 60
+SolomonPotvinBengio/rc_201.2.txt |   sequence | open (improved init) |     723.98 |       0.00 | 13 21 23 9 10 12 5 6 8 16 19 25 17 18 1 24 2 7 11 4 3 14 20 22 15 | seed: 852516914901170410 | 39
+SolomonPotvinBengio/rc_201.3.txt |   sequence | open (improved init) |     797.82 |       0.00 | 15 12 14 5 17 2 30 22 27 9 10 24 7 28 19 25 26 6 8 3 18 29 20 13 11 16 1 4 21 31 23 | seed: -3480566225576702237 | 31
+SolomonPotvinBengio/rc_201.4.txt |   sequence | open (improved init) |     795.96 |       0.00 | 20 2 14 3 1 17 21 6 5 4 12 13 25 23 16 11 9 10 18 24 7 15 8 22 19 | seed: 1565164430900951075 | 61
+SolomonPotvinBengio/rc_202.1.txt |   sequence | open (improved init) |     807.49 |       0.00 | 30 32 26 21 13 14 11 9 7 8 10 23 18 2 1 5 28 27 20 25 16 15 4 3 22 19 12 29 6 17 31 24 | seed: 4803659220585975688 | 19
+SolomonPotvinBengio/rc_202.2.txt |   sequence | open (improved init) |     415.19 |       0.00 | 12 3 9 7 6 10 8 13 2 5 4 1 11 | seed: -4439195494228234539 | 43
+SolomonPotvinBengio/rc_202.3.txt |   sequence | open (improved init) |     850.22 |       0.00 | 14 8 11 21 20 5 19 22 24 25 10 12 13 28 2 16 1 9 15 23 17 4 3 26 6 7 27 18 | seed: -7210996600395512389 | 15
+SolomonPotvinBengio/rc_202.4.txt |   sequence | open (improved init) |     864.34 |       0.00 | 21 8 17 5 20 14 7 13 22 19 16 18 9 23 2 3 11 25 4 10 6 1 12 27 15 26 24 | seed: -923676794588259275 | 37
+SolomonPotvinBengio/rc_203.1.txt |   sequence | open (improved init) |     495.61 |       0.01 | 17 10 9 15 11 14 7 4 5 6 1 2 18 12 8 3 13 16 | seed: -9100410689356543308 | 5
+SolomonPotvinBengio/rc_203.2.txt |   sequence | open (improved init) |     836.07 |       0.01 | 28 13 12 10 11 26 17 21 31 27 3 8 6 14 4 5 7 16 30 15 29 19 22 18 23 9 1 2 20 32 24 25 | seed: -1998746613039218106 | 67
+SolomonPotvinBengio/rc_203.3.txt |   sequence | open (improved init) |     859.12 |       0.03 | 33 31 15 14 16 13 11 9 8 10 12 23 18 24 34 1 28 29 20 2 22 26 36 4 3 17 6 5 25 21 27 7 19 32 35 30 | seed: 8875762769961624938 | 96
+SolomonPotvinBengio/rc_203.4.txt |   sequence | open (improved init) |     407.66 |       0.00 | 13 9 6 7 5 14 12 4 10 3 2 1 8 11 | seed: -3836482480653521626 | 30
+SolomonPotvinBengio/rc_204.1.txt |   sequence | open (improved init) |     896.95 |       0.46 | 40 42 43 44 28 41 32 33 34 31 22 24 23 20 16 15 17 18 19 21 5 39 7 26 25 3 4 1 2 6 30 35 38 9 27 11 10 8 36 29 37 14 13 12 45 | seed: 438491325383731198 | 74
+SolomonPotvinBengio/rc_204.2.txt |   sequence | open (improved init) |     846.99 |       0.00 | 29 22 20 9 23 30 4 6 10 13 32 2 27 3 15 5 19 26 14 21 28 16 1 31 24 25 18 11 8 12 7 17 | seed: -6668880874394269264 | 1
+SolomonPotvinBengio/rc_204.3.txt |   sequence | open (improved init) |     515.20 |       0.00 | 22 21 14 12 10 3 17 20 11 18 23 19 13 8 7 5 1 2 4 6 9 15 16 | seed: -2180440316262789540 | 0
+SolomonPotvinBengio/rc_205.1.txt |   sequence | open (improved init) |     388.45 |       0.00 | 12 3 1 6 9 8 13 10 7 2 5 4 11 | seed: -206211396628416629 | 17
+SolomonPotvinBengio/rc_205.2.txt |   sequence | open (improved init) |     772.02 |       0.01 | 12 17 22 4 3 1 11 7 23 14 25 24 10 6 9 13 8 16 15 19 26 21 2 5 18 20 | seed: -1424019712436534972 | 95
+SolomonPotvinBengio/rc_205.3.txt |   sequence | open (improved init) |     861.35 |       0.01 | 23 33 28 29 22 19 8 9 16 24 30 26 27 5 2 7 6 15 4 3 1 20 32 18 14 13 12 31 17 10 25 11 21 34 | seed: -6256907313227781275 | 24
+SolomonPotvinBengio/rc_205.4.txt |   sequence | open (improved init) |     775.67 |       0.00 | 16 9 5 8 4 6 21 15 7 17 20 24 27 23 2 13 22 3 18 14 1 12 11 10 26 25 19 | seed: -5042210946813318155 | 24
+SolomonPotvinBengio/rc_206.1.txt |   sequence | open (improved init) |     118.62 |       0.00 | 3 2 1 | seed: -9161488083983130599 | 42
+SolomonPotvinBengio/rc_206.2.txt |   sequence | open (improved init) |     839.41 |       0.02 | 34 35 27 19 20 26 15 18 22 9 7 4 23 29 28 14 5 13 8 16 30 31 1 2 3 36 21 10 6 32 12 11 24 17 33 25 | seed: -7296551568648087893 | 17
+SolomonPotvinBengio/rc_206.3.txt |   sequence | open (improved init) |     667.19 |       0.00 | 18 8 3 2 6 22 21 20 17 4 5 10 11 13 12 16 23 24 19 15 14 9 1 7 | seed: 2884893368129874661 | 75
+SolomonPotvinBengio/rc_206.4.txt |   sequence | open (improved init) |     869.59 |       0.01 | 2 5 18 11 20 13 12 10 9 36 32 26 35 31 6 7 8 30 28 21 29 23 19 4 3 1 17 15 16 22 34 33 25 27 37 24 14 | seed: -3106737081562935006 | 48
+SolomonPotvinBengio/rc_207.1.txt |   sequence | open (improved init) |     794.02 |       0.00 | 32 33 24 26 14 12 10 11 16 25 27 21 29 30 1 4 6 2 19 5 13 9 17 20 15 31 18 3 7 8 28 22 23 | seed: 3839772119307965689 | 70
+SolomonPotvinBengio/rc_207.2.txt |   sequence | open (improved init) |     858.83 |       0.00 | 18 9 10 6 14 17 21 11 13 19 23 1 2 3 7 26 25 16 30 4 29 8 22 5 28 27 15 12 20 24 | seed: -2857415388839753969 | 1
+SolomonPotvinBengio/rc_207.3.txt |   sequence | open (improved init) |     857.36 |       0.00 | 5 16 2 15 13 26 25 9 11 21 27 29 22 31 23 20 28 18 3 17 12 8 7 14 19 30 10 6 1 4 24 32 | seed: -7309170138258122048 | 71
+SolomonPotvinBengio/rc_207.4.txt |   sequence | open (improved init) |     135.15 |       0.00 | 2 3 5 1 4 | seed: 4773637529921633572 | 40
+SolomonPotvinBengio/rc_208.1.txt |   sequence | open (improved init) |     903.13 |       0.03 | 24 37 29 34 35 23 10 11 21 31 17 27 4 6 2 15 1 14 8 28 20 26 36 19 30 3 5 22 18 16 13 12 9 32 7 25 33 | seed: -2797372208455400941 | 87
+SolomonPotvinBengio/rc_208.2.txt |   sequence | open (improved init) |     868.08 |       0.00 | 24 21 12 14 9 8 18 25 23 3 2 1 4 17 20 15 19 16 10 6 27 11 5 26 28 13 7 22 | seed: -1318601410336855256 | 5
+SolomonPotvinBengio/rc_208.3.txt |   sequence | open (improved init) |     793.21 |       0.01 | 2 5 18 11 15 16 20 12 22 33 34 21 31 24 32 9 17 28 30 7 6 8 3 1 27 26 29 14 13 10 25 19 4 23 35 | seed: 5607282911783222514 | 63

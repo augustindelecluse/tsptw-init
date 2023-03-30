@@ -1,0 +1,27 @@
+SolomonPesant/rc201.0 |   sequence | open (improved init) |     667.91 |       0.03 | 11 2 1 23 15 19 6 5 8 9 18 21 20 24 13 3 12 4 22 17 10 7 14 16 25 | seed: -6530067415265692491 | 43
+SolomonPesant/rc201.1 |   sequence | open (improved init) |     700.10 |       0.01 | 19 17 1 11 14 23 18 7 3 5 2 21 25 24 13 6 12 4 16 20 28 15 9 10 8 26 27 22 | seed: -6577549220732121025 | 53
+SolomonPesant/rc201.2 |   sequence | open (improved init) |     723.91 |       0.00 | 26 28 19 10 8 6 5 4 7 18 20 21 12 13 14 23 25 27 16 3 11 9 24 1 15 2 22 17 | seed: -2931944576540134768 | 79
+SolomonPesant/rc201.3 |   sequence | open (improved init) |     525.58 |       0.00 | 9 7 8 15 10 13 19 16 6 4 5 18 17 11 2 12 1 3 14 | seed: -2206101553465019180 | 8
+SolomonPesant/rc202.0 |   sequence | open (improved init) |     654.70 |       0.00 | 20 21 19 14 7 4 2 3 5 13 24 25 16 15 9 10 17 12 11 8 1 6 23 22 18 | seed: 8933698472817360754 | 90
+SolomonPesant/rc202.1 |   sequence | open (improved init) |     486.38 |       0.00 | 15 20 8 12 9 10 6 7 17 21 18 19 5 4 13 3 11 2 1 14 22 16 | seed: -185516240705475454 | 97
+SolomonPesant/rc202.2 |   sequence | open (improved init) |     718.28 |       0.00 | 14 2 1 11 8 12 13 9 10 18 21 24 26 22 4 23 15 5 25 6 16 20 7 17 3 27 19 | seed: 7767248103568024127 | 17
+SolomonPesant/rc202.3 |   sequence | open (improved init) |     822.56 |       0.00 | 13 11 4 18 24 20 6 22 2 1 5 14 25 12 3 16 19 10 9 26 7 15 17 21 23 8 | seed: 9127080049563531861 | 89
+SolomonPesant/rc203.0 |   sequence | open (improved init) |     818.22 |       0.01 | 34 22 17 11 2 3 4 1 21 6 5 13 10 8 26 33 20 9 14 7 15 30 16 23 29 28 32 24 19 35 25 18 27 12 31 | seed: -5078562055354653408 | 35
+SolomonPesant/rc203.1 |   sequence | open (improved init) |     831.38 |       0.02 | 29 33 36 11 14 25 13 6 7 9 8 10 12 22 26 19 17 18 20 5 21 3 4 1 2 24 27 31 16 15 23 28 34 37 35 32 30 | seed: 3195210770684848755 | 93
+SolomonPesant/rc203.2 |   sequence | open (improved init) |     783.90 |       0.00 | 11 10 9 13 26 19 12 1 25 23 22 16 27 4 24 5 15 8 7 6 14 21 17 3 2 28 20 18 | seed: -5369198909927253073 | 4
+SolomonPesant/rc204.0 |   sequence | open (improved init) |     770.17 |       0.00 | 23 1 5 30 31 24 10 13 14 12 26 28 27 7 8 3 19 9 18 15 25 22 20 4 16 17 6 32 2 21 11 29 | seed: -7924438554109104963 | 17
+SolomonPesant/rc204.1 |   sequence | open (improved init) |     602.87 |       0.00 | 22 14 24 16 10 4 3 18 17 26 21 11 27 13 15 23 19 28 25 12 7 5 1 2 6 9 8 20 | seed: -8973688246968676952 | 36
+SolomonPesant/rc204.2 |   sequence | open (improved init) |     894.12 |       0.11 | 29 35 28 18 17 15 13 11 12 14 16 19 22 27 32 8 9 34 40 23 1 37 39 31 6 20 3 38 4 21 5 7 24 36 30 2 26 25 33 10 | seed: 1414591538298764351 | 58
+SolomonPesant/rc205.0 |   sequence | open (improved init) |     548.33 |       0.00 | 18 26 10 17 11 8 12 9 23 20 19 21 7 16 5 4 2 6 3 1 15 14 13 25 24 22 | seed: -5922665303365192255 | 8
+SolomonPesant/rc205.1 |   sequence | open (improved init) |     592.82 |       0.00 | 14 9 16 8 7 6 13 5 17 21 1 19 11 18 10 2 20 3 4 12 22 15 | seed: 4782310768839515823 | 7
+SolomonPesant/rc205.2 |   sequence | open (improved init) |     737.26 |       0.00 | 27 28 19 25 12 6 8 9 7 10 20 22 17 24 2 14 15 16 13 5 11 26 1 3 21 4 23 18 | seed: 7623980229849571318 | 81
+SolomonPesant/rc205.3 |   sequence | open (improved init) |     647.45 |       0.00 | 1 9 7 4 2 19 18 15 14 8 5 3 6 20 21 10 22 24 13 16 12 17 11 23 | seed: -7693135697020220110 | 1
+SolomonPesant/rc206.0 |   sequence | open (improved init) |     879.51 |       0.89 | 2 1 16 14 15 11 9 25 24 12 10 13 21 29 34 23 35 32 22 19 30 18 8 6 7 31 3 17 5 27 20 26 4 33 28 | seed: -7627756283939905598 | 79
+SolomonPesant/rc206.1 |   sequence | open (improved init) |     785.48 |       0.00 | 30 31 21 23 22 15 13 11 10 12 14 27 26 5 9 7 6 16 17 8 28 29 1 19 32 3 2 20 4 18 24 33 25 | seed: -4257194373608461616 | 55
+SolomonPesant/rc206.2 |   sequence | open (improved init) |     745.34 |       0.01 | 21 28 9 16 10 20 24 11 8 7 17 27 22 32 18 29 25 23 5 26 6 4 15 3 2 1 13 12 14 31 30 19 | seed: 4136041733815969749 | 96
+SolomonPesant/rc207.0 |   sequence | open (improved init) |     877.89 |       0.04 | 24 32 23 35 13 14 12 11 25 22 30 16 6 10 5 8 29 20 34 33 28 18 9 7 15 31 19 36 2 3 4 21 26 1 17 37 27 | seed: -3247527938750862479 | 30
+SolomonPesant/rc207.1 |   sequence | open (improved init) |     856.99 |       0.01 | 31 19 22 27 1 14 2 12 13 11 10 18 24 21 33 26 25 29 20 16 9 8 5 6 7 28 15 4 3 17 30 32 23 | seed: 26398283762141555 | 16
+SolomonPesant/rc207.2 |   sequence | open (improved init) |     688.53 |       0.00 | 9 10 7 27 20 23 29 30 6 11 19 8 25 24 26 4 1 2 18 5 3 21 28 22 16 14 17 13 12 15 | seed: -7268098659816704123 | 36
+SolomonPesant/rc208.0 |   sequence | open (improved init) |     910.04 |       0.12 | 40 41 29 37 23 43 30 36 5 7 20 9 8 4 2 39 34 35 18 16 17 15 22 14 11 21 12 13 25 38 33 26 27 42 6 3 10 19 44 24 31 32 1 28 | seed: 8262847162601855557 | 60
+SolomonPesant/rc208.1 |   sequence | open (improved init) |     735.38 |       0.00 | 15 11 19 18 27 13 21 25 3 2 4 1 5 6 14 17 8 23 22 10 9 7 24 12 16 26 20 | seed: 3265119091856129980 | 57
+SolomonPesant/rc208.2 |   sequence | open (improved init) |     817.17 |       0.00 | 21 29 22 15 11 17 2 6 25 23 24 19 26 5 18 4 3 13 10 28 27 7 9 12 8 14 20 16 1 | seed: 8545727376558745079 | 44
