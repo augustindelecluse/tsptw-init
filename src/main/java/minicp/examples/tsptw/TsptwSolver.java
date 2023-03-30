@@ -156,6 +156,46 @@ public class TsptwSolver {
     }
 
     /**
+     * Tries to visit as many nodes as possible using a greedy search.
+     * Stops at the first failure encountered
+     * @return first feasible solution in the available time
+     */
+    public TsptwResult satisfy_greedy() {
+        cp = makeSolver();
+        initCpVars();
+        postSatisfactionConstraint();
+        DFSearch search = makeDfs(cp, this::maxRegretBranching);
+        Procedure solutionNotifier = () -> {
+            int nVisit = this.nVisitedNodes.max();
+            if (nVisit > bestNVisited) {
+                updateCurrentOrder();
+                nNotYetVisited = route.fillExcluded(notYetVisited);
+                if (verbosity > 0) {
+                    String excludedString = "{" + Arrays.stream(notYetVisited, 0, nNotYetVisited)
+                            .mapToObj(Integer::toString).collect(Collectors.joining(", ")) + "}";
+                    System.out.println("#visit: " + (nVisit-1) + "/" + (nNodes) + " (closed sequence = " + (route.nExcluded() == 0) +
+                            "). ordering: 0 " + route.ordering(false, " ") + " excluded = " + excludedString);
+                }
+                updateSatisfiabilitySolution(currentSolOrder, nVisit);
+                // stores within the set all nodes that have been visited
+                memberInSolution.clear();
+                for (int i = 1 ; i < nVisit ; ++i) {
+                    memberInSolution.add(currentSolOrder[i]);
+                }
+                if (bestNVisited == nNodesWithDepot) {
+                    notifySolution(currentSolOrder, cost());
+                } else {
+                    notifySolution(currentSolOrder, Integer.MAX_VALUE);
+                }
+            }
+        };
+        search.onSolution(solutionNotifier);
+
+        SearchStatistics stats = search.solve(s -> s.numberOfSolutions() >= 1); // find an initial number of possible nodes
+        return bestSol;
+    }
+
+    /**
      * Computes the cost manually
      * Requires {@link TsptwSolver#currentSolOrder to be set with all the nodes}
      */
@@ -515,7 +555,6 @@ public class TsptwSolver {
         int bestNode = -1;
         int bestRegret = Integer.MIN_VALUE;
         int size = route.fillPossible(nodes);
-        int nFound = 0;
         for (int i = 0 ; i < size ; ++i) {
             int nInsert = route.fillMemberPredInsert(nodes[i], insertion);
             int minCost1 = Integer.MAX_VALUE;
@@ -536,9 +575,6 @@ public class TsptwSolver {
             if (regret > bestRegret) {
                 bestNode = nodes[i];
                 bestRegret = regret;
-                nFound = 1;
-            } else if (regret == bestRegret) {
-                insertion[nFound++] = nodes[i];
             }
         }
         int branchingNode = bestNode;

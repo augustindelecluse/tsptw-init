@@ -1,0 +1,30 @@
+SolomonPotvinBengio/rc_201.1.txt |   sequence |       open | 2147483.65 |       0.00 | 14 18 13 9 5 4 8 6 16 17 11 1 12 3 19 10 2 15 0 | seed: 2046469499124757556 | 0
+SolomonPotvinBengio/rc_201.2.txt |   sequence |       open | 2147483.65 |       0.01 | 21 13 23 9 10 12 5 25 19 16 1 18 2 7 14 11 3 4 20 22 15 0 0 0 0 | seed: -2096512543436617747 | 0
+SolomonPotvinBengio/rc_201.3.txt |   sequence |       open | 2147483.65 |       0.00 | 15 12 14 5 17 2 27 30 22 9 7 28 24 19 6 8 26 3 18 29 16 4 20 1 21 23 31 0 0 0 0 | seed: -215655142278418091 | 0
+SolomonPotvinBengio/rc_201.4.txt |   sequence |       open | 2147483.65 |       0.00 | 2 20 14 3 1 17 21 6 5 4 25 12 13 11 18 16 9 10 24 7 15 8 22 19 0 | seed: 4437960738243968182 | 0
+SolomonPotvinBengio/rc_202.1.txt |   sequence |       open | 2147483.65 |       0.00 | 30 32 21 13 14 9 7 8 10 15 27 5 25 20 28 4 16 3 22 19 17 12 11 26 29 6 31 24 0 0 0 0 | seed: 2645477834277136520 | 0
+SolomonPotvinBengio/rc_202.2.txt |   sequence |       open |     415.19 |       0.00 | 12 3 9 7 6 10 8 13 2 5 4 1 11 | seed: -1866013571344182291 | 0
+SolomonPotvinBengio/rc_202.3.txt |   sequence |       open | 2147483.65 |       0.00 | 14 8 11 21 20 5 19 22 24 28 13 9 12 2 16 1 15 17 3 23 6 7 27 18 25 0 0 0 | seed: 1994365476233818574 | 0
+SolomonPotvinBengio/rc_202.4.txt |   sequence |       open | 2147483.65 |       0.00 | 21 17 5 20 14 7 24 11 16 23 19 25 10 4 12 6 15 27 26 8 0 0 0 0 0 0 0 | seed: 2550314597280442520 | 0
+SolomonPotvinBengio/rc_203.1.txt |   sequence |       open |     495.61 |       0.00 | 17 10 9 15 11 14 7 4 5 6 1 2 18 12 8 3 13 16 | seed: 4123152520777632547 | 0
+SolomonPotvinBengio/rc_203.2.txt |   sequence |       open | 2147483.65 |       0.00 | 3 13 10 12 11 26 17 8 6 30 29 7 15 1 22 18 9 23 2 20 32 28 5 0 0 0 0 0 0 0 0 0 | seed: -3941466119630416796 | 0
+SolomonPotvinBengio/rc_203.3.txt |   sequence |       open | 2147483.65 |       0.00 | 3 22 19 15 23 14 12 9 8 10 18 24 31 1 28 20 33 17 36 4 25 6 35 32 7 30 0 0 0 0 0 0 0 0 0 0 | seed: 8121376610111745104 | 0
+SolomonPotvinBengio/rc_203.4.txt |   sequence |       open |     407.66 |       0.00 | 13 9 6 7 5 14 12 4 10 3 2 1 8 11 | seed: -8462277660360814080 | 0
+SolomonPotvinBengio/rc_204.1.txt |   sequence |       open | 2147483.65 |       0.00 | 40 41 28 16 34 33 38 35 2 18 30 39 6 7 25 4 3 1 23 31 44 42 12 9 11 10 8 36 29 14 37 45 32 0 0 0 0 0 0 0 0 0 0 0 0 | seed: 8088915226972863152 | 0
+SolomonPotvinBengio/rc_204.2.txt |   sequence |       open |     846.99 |       0.00 | 29 22 20 9 23 30 4 6 10 13 32 2 27 3 15 5 19 26 14 21 28 16 1 31 24 25 18 11 8 12 7 17 | seed: 7586847153137378057 | 0
+SolomonPotvinBengio/rc_204.3.txt |   sequence |       open |     515.20 |       0.00 | 22 21 14 12 10 3 17 20 11 18 23 19 13 8 7 5 1 2 4 6 9 15 16 | seed: 8989646066353342429 | 0
+SolomonPotvinBengio/rc_205.1.txt |   sequence |       open |     388.45 |       0.00 | 12 3 1 6 9 8 13 10 7 2 5 4 11 | seed: 3301965389363952522 | 0
+SolomonPotvinBengio/rc_205.2.txt |   sequence |       open | 2147483.65 |       0.00 | 25 9 22 3 7 11 23 4 24 17 26 16 8 19 15 2 21 5 18 20 0 0 0 0 0 0 | seed: -1414252059617639969 | 0
+SolomonPotvinBengio/rc_205.3.txt |   sequence |       open | 2147483.65 |       0.00 | 23 33 28 29 19 8 9 16 24 22 30 4 7 27 26 5 2 6 15 3 1 20 32 18 14 12 31 17 10 11 25 34 0 0 | seed: -9092560200787983121 | 0
+SolomonPotvinBengio/rc_205.4.txt |   sequence |       open | 2147483.65 |       0.00 | 16 9 5 4 6 15 7 17 22 27 2 13 24 8 21 25 14 18 1 12 11 10 26 19 0 0 0 | seed: 5255785985598846449 | 0
+SolomonPotvinBengio/rc_206.1.txt |   sequence |       open |     118.62 |       0.00 | 3 2 1 | seed: 1595333231012123605 | 0
+SolomonPotvinBengio/rc_206.2.txt |   sequence |       open | 2147483.65 |       0.00 | 34 35 27 19 20 26 15 18 22 30 31 7 8 16 23 29 28 14 6 2 36 21 10 32 12 11 24 17 3 33 25 0 0 0 0 0 | seed: 5949168072529798408 | 0
+SolomonPotvinBengio/rc_206.3.txt |   sequence |       open | 2147483.65 |       0.00 | 18 8 3 2 6 13 16 10 21 23 4 5 20 24 12 11 19 15 14 9 1 7 0 0 | seed: 5999779543491795565 | 0
+SolomonPotvinBengio/rc_206.4.txt |   sequence |       open | 2147483.65 |       0.00 | 20 2 11 10 9 5 7 35 32 26 31 13 8 21 29 30 6 19 34 22 16 15 17 1 25 24 14 33 0 0 0 0 0 0 0 0 0 | seed: -2047999541141082130 | 0
+SolomonPotvinBengio/rc_207.1.txt |   sequence |       open | 2147483.65 |       0.01 | 32 33 24 16 26 14 11 25 27 4 2 5 29 21 30 1 8 19 13 9 17 20 15 31 18 3 7 28 22 23 0 0 0 | seed: -1793379369827716264 | 0
+SolomonPotvinBengio/rc_207.2.txt |   sequence |       open | 2147483.65 |       0.00 | 18 9 10 6 17 21 30 14 7 13 19 23 1 2 3 26 25 16 4 29 8 22 5 28 27 15 12 20 24 0 | seed: -7909641487518047147 | 0
+SolomonPotvinBengio/rc_207.3.txt |   sequence |       open | 2147483.65 |       0.00 | 16 2 15 13 26 25 9 21 28 29 5 4 22 31 20 18 23 12 7 8 14 19 30 10 6 1 24 32 0 0 0 0 | seed: -627312222627026994 | 0
+SolomonPotvinBengio/rc_207.4.txt |   sequence |       open |     135.15 |       0.00 | 2 3 5 1 4 | seed: -4250519862607541471 | 0
+SolomonPotvinBengio/rc_208.1.txt |   sequence |       open | 2147483.65 |       0.00 | 24 37 29 26 6 21 1 35 23 11 16 14 8 28 20 36 3 34 31 30 19 18 13 12 32 7 25 33 0 0 0 0 0 0 0 0 0 | seed: 9049952810385585233 | 0
+SolomonPotvinBengio/rc_208.2.txt |   sequence |       open |     868.08 |       0.00 | 24 21 12 14 9 8 18 25 23 3 2 1 4 17 20 15 19 16 10 6 27 11 5 26 28 13 7 22 | seed: -7708433692371323313 | 0
+SolomonPotvinBengio/rc_208.3.txt |   sequence |       open | 2147483.65 |       0.00 | 5 18 21 11 15 16 20 30 32 12 22 33 24 17 28 7 8 3 2 1 27 26 29 14 13 10 25 19 4 23 35 0 0 0 0 | seed: -2798601080702301831 | 0

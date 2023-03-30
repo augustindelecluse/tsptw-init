@@ -17,7 +17,8 @@ import java.util.stream.Collectors;
 public class TSPBenchmark {
 
     public enum MODE {
-        SATISFY // find a first feasible solution
+        SATISFY, // find a first feasible solution
+        GREEDY,  // attempt to visit as many nodes as possible and stops at the first failure encountered
     }
 
     private record ModeSetup(int nRun, int timeout, String directory) {
@@ -27,7 +28,8 @@ public class TSPBenchmark {
     };
 
     private static final Map<MODE, ModeSetup> modeSetup = Map.of(
-            MODE.SATISFY, new ModeSetup(100, 10, "initial")
+            MODE.SATISFY, new ModeSetup(100, 10, "initial"),
+            MODE.GREEDY, new ModeSetup(1, 10, "greedy")
     );
 
     private static final String instancePath = "data/TSPTW/instances"; // path to the instances folder
@@ -40,13 +42,12 @@ public class TSPBenchmark {
     // files where the initial solutions to start from are written
     private final String[] setToSolve = new String[] {
             "data/TSPTW/best_known_sol/Langevin.txt",
-            /*"data/TSPTW/best_known_sol/Dumas.txt",
+            "data/TSPTW/best_known_sol/Dumas.txt",
             "data/TSPTW/best_known_sol/AFG.txt",
             "data/TSPTW/best_known_sol/OhlmannThomas.txt",
             "data/TSPTW/best_known_sol/GendreauDumasExtended.txt",
             "data/TSPTW/best_known_sol/SolomonPesant.txt",
             "data/TSPTW/best_known_sol/SolomonPotvinBengio.txt"
-             */
     };
 
     /**
@@ -140,20 +141,16 @@ public class TSPBenchmark {
          * @return
          */
         public String[] getArgs() {
-            List<String> specialParam = null;
-            switch (instanceParam.mode) {
-                case SATISFY -> {
-                    specialParam = List.of();
-                }
-                default -> throw new IllegalArgumentException("unrecognized mode");
-            }
             List<String> commonParam = new ArrayList<>(List.of(
                     "-f", instanceParam.instancePath(),
                     "-t", String.valueOf(modeSetup.get(instanceParam.mode).timeout),
                     "-r", String.valueOf(seed),
-                    "-v", "0"
+                    "-v", "0",
+                    "-m", switch (instanceParam.mode) {
+                        case GREEDY -> "greedy";
+                        case SATISFY -> "satisfy";
+                    }
             ));
-            commonParam.addAll(specialParam);
             return commonParam.toArray(new String[0]);
         }
 
@@ -392,6 +389,13 @@ public class TSPBenchmark {
         solve(MODE.SATISFY, setToSolve);
     }
 
+    /**
+     * Tries to find a first feasible solution on the instances
+     */
+    public void solve_greedy() {
+        solve(MODE.GREEDY, setToSolve);
+    }
+
     public void solve(MODE mode, String[] setOfInstances) {
         int maxListSize = 2 * maxParallel;
         int nRun = modeSetup.get(mode).nRun;
@@ -424,7 +428,8 @@ public class TSPBenchmark {
 
     public static void main(String[] args) {
         TSPBenchmark benchmark = new TSPBenchmark();
-        benchmark.solve_satisfy();
+        //benchmark.solve_satisfy();
+        benchmark.solve_greedy();
     }
 
 }

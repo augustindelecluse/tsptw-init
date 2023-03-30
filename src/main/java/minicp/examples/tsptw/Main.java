@@ -9,6 +9,11 @@ import java.util.stream.IntStream;
 
 public class Main {
 
+    public enum Method {
+        SATISFY, // try to find a feasible tour to the instance
+        GREEDY, // only uses the first part of the 'SATISFY' method. This might produce an incomplete tour
+    }
+
     private final String fname;
     private final int    timeout;
 
@@ -21,6 +26,7 @@ public class Main {
     private String       error;
     private long         seed;
     private int          verbosity;
+    private Method       method;
 
     public boolean isCrashed() {
         return crashed;
@@ -42,7 +48,7 @@ public class Main {
      * @param seed seed to use for random number generation of the solver
      * @param verbosity verbosity level: the higher, the more details are given
      */
-    public Main(final String fname, final int timeout, final long seed, final int verbosity) {
+    public Main(final String fname, final int timeout, final long seed, final int verbosity, Method method) {
         this.fname              = fname;
         this.timeout            = timeout;
 
@@ -53,6 +59,7 @@ public class Main {
         this.closed             = false;
         this.seed               = seed;
         this.verbosity          = verbosity;
+        this.method    = method;
     }
 
     public static Main instanciate(String[] args) throws Exception {
@@ -62,7 +69,13 @@ public class Main {
         int    timeout = Integer.parseInt(cli.getOptionValue("t", "600"));
         long seed = Long.parseLong(cli.getOptionValue("r", String.valueOf(42)));
         int verbosity = Integer.parseInt(cli.getOptionValue("v", String.valueOf(1)));
-        return new Main(fname, timeout, seed, verbosity);
+        String methodStr = cli.getOptionValue("m", "optimize");
+        Method method = null;
+        switch (methodStr.toLowerCase(Locale.ROOT)) {
+            case "satisfy" -> method = Method.SATISFY;
+            case "greedy" -> method = Method.GREEDY;
+        }
+        return new Main(fname, timeout, seed, verbosity, method);
     }
 
     /**
@@ -106,8 +119,12 @@ public class Main {
                 }
                 System.arraycopy(solution, 0, this.solution, 0, this.solution.length);
             });
-            TsptwResult result = solver.satisfy();
-            //TsptwResult result = solver.optimize();
+            TsptwResult result;
+            switch (method) {
+                case SATISFY -> result = solver.satisfy();
+                case GREEDY -> result = solver.satisfy_greedy();
+                default -> result = null;
+            }
             this.closed  = result.isOptimum;
         } catch (Throwable e) {
             this.crashed = true;
@@ -130,6 +147,7 @@ public class Main {
         options.addOption("t", true, "timeout");
         options.addOption("r", true, "seed");
         options.addOption("v", true, "verbosity");
+        options.addOption("m", true, "method");
         return options;
     }
 
