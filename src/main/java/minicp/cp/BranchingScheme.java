@@ -163,7 +163,7 @@ public final class BranchingScheme {
     }
 
     /**
-     * Last conflict heuristic
+     * Last conflict detourAndSlackCost
      * Attempts to branch first on the last variable that caused an Inconsistency
      *
      * Lecoutre, C., Saïs, L., Tabary, S., & Vidal, V. (2009).

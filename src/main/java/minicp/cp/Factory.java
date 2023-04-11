@@ -194,7 +194,7 @@ public final class Factory {
     }
 
     /**
-     * Creates a Depth First Search with custom branching heuristic
+     * Creates a Depth First Search with custom branching detourAndSlackCost
      * <pre>
      * // Example of binary search: At each node it selects
      * // the first free variable qi from the array q,

@@ -3,6 +3,7 @@ package minicp.examples.tsptw;
 import minicp.util.Procedure;
 
 import java.io.*;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -28,7 +29,7 @@ public class TSPBenchmark {
     };
 
     private static final Map<MODE, ModeSetup> modeSetup = Map.of(
-            MODE.SATISFY, new ModeSetup(100, 10, "initial"),
+            MODE.SATISFY, new ModeSetup(100, 300, "initial"),
             MODE.GREEDY, new ModeSetup(1, 10, "greedy")
     );
 
@@ -41,13 +42,14 @@ public class TSPBenchmark {
     // TODO add unclosed instances
     // files where the initial solutions to start from are written
     private final String[] setToSolve = new String[] {
-            "data/TSPTW/best_known_sol/Langevin.txt",
-            "data/TSPTW/best_known_sol/Dumas.txt",
-            "data/TSPTW/best_known_sol/AFG.txt",
-            "data/TSPTW/best_known_sol/OhlmannThomas.txt",
-            "data/TSPTW/best_known_sol/GendreauDumasExtended.txt",
-            "data/TSPTW/best_known_sol/SolomonPesant.txt",
-            "data/TSPTW/best_known_sol/SolomonPotvinBengio.txt"
+            //"data/TSPTW/best_known_sol/Langevin.txt",
+            //"data/TSPTW/best_known_sol/Dumas.txt",
+            //"data/TSPTW/best_known_sol/AFG.txt",
+            //"data/TSPTW/best_known_sol/OhlmannThomas.txt",
+            //"data/TSPTW/best_known_sol/GendreauDumasExtended.txt",
+            //"data/TSPTW/best_known_sol/SolomonPesant.txt",
+            //"data/TSPTW/best_known_sol/SolomonPotvinBengio.txt",
+            "Delecluse"
     };
 
     /**
@@ -276,13 +278,22 @@ public class TSPBenchmark {
 
     private List<InstanceRun> prepareInstanceRun(String solutionFile, MODE mode) throws IOException {
         ArrayList<InstanceRun> instanceRuns = new ArrayList<>();
-        String instanceSet = Paths.get(solutionFile).getFileName().toString().replace(".txt","");
-        try (BufferedReader reader = new BufferedReader(new FileReader(solutionFile))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                SolutionInfo sol = readFromLine(instanceSet, line);
-                if (sol != null)
-                    instanceRuns.add(new InstanceRun(instanceSet, sol.instance, sol.permutation(), mode));
+        boolean isFile = new File(solutionFile).exists();
+        if (!isFile) {
+            String[] split = solutionFile.split("/");
+            String instanceSet = split[split.length-1].replace(".txt", "");
+            for (File f: Objects.requireNonNull(new File(Paths.get("data/TSPTW/instances/"+instanceSet).toString()).listFiles())) {
+                instanceRuns.add(new InstanceRun(instanceSet, f.getName(), null, mode));
+            }
+        } else {
+            String instanceSet = Paths.get(solutionFile).getFileName().toString().replace(".txt", "");
+            try (BufferedReader reader = new BufferedReader(new FileReader(solutionFile))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    SolutionInfo sol = readFromLine(instanceSet, line);
+                    if (sol != null)
+                        instanceRuns.add(new InstanceRun(instanceSet, sol.instance, sol.permutation(), mode));
+                }
             }
         }
         return instanceRuns;
@@ -428,8 +439,8 @@ public class TSPBenchmark {
 
     public static void main(String[] args) {
         TSPBenchmark benchmark = new TSPBenchmark();
-        //benchmark.solve_satisfy();
-        benchmark.solve_greedy();
+        benchmark.solve_satisfy();
+        //benchmark.solve_greedy();
     }
 
 }

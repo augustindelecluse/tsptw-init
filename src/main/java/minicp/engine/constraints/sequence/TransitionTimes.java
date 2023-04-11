@@ -212,9 +212,9 @@ public class TransitionTimes extends AbstractConstraint {
                     seq.removePredInsert(pred, current);
                 else { // check that current -> succ is feasible
                     int timeDeparture = Math.max(timeReachingNode, time[current].min());
-                    if (timeDeparture + serviceTime[current] + transition[current][succ] > time[succ].max())
+                    if (timeDeparture + serviceTime[current] + transition[current][succ] > time[succ].max()) {
                         seq.removePredInsert(pred, current);
-                    else if (distance != null) { // check that doing the transition does not exceed the maximum distance
+                    } else if (distance != null) { // check that doing the transition does not exceed the maximum distance
                         int detour = transition[pred][current] + transition[current][succ] - transition[pred][succ];
                         if (detour > maxDetourAllowed) // detour is too long
                             seq.removePredInsert(pred, current);

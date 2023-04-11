@@ -31,7 +31,7 @@ public final class TsptwParser {
             else if (lc >= 1 && lc <=nb_nodes) {
                     int i = (lc - 1);
                     int j = 0;
-                    for (String distance : line.split("\\s+")) {
+                    for (String distance : line.strip().split("\\s+")) {
                         float fdist     = Float.parseFloat(distance);
                         int   idist     = (int) Math.rint(TsptwInstance.PRECISION * fdist);
                         distances[i][j] = idist;

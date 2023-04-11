@@ -112,6 +112,7 @@ public class InstanceStat {
                 "data/TSPTW/instances/SolomonPesant",
                 "data/TSPTW/instances/SolomonPotvinBengio"
         };
+        System.out.println("instance | nSucc | overlap");
         for (String set: setToSolve) {
             for (File f: Objects.requireNonNull(new File(Paths.get(set).toString()).listFiles())) {
                 TsptwInstance instance = TsptwParser.fromFile(f.getPath());
