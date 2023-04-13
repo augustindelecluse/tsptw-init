@@ -27,6 +27,7 @@ public class Main {
     private long         seed;
     private int          verbosity;
     private Method       method;
+    private int          nNodes;
 
     public boolean isCrashed() {
         return crashed;
@@ -106,6 +107,7 @@ public class Main {
     public void solve() {
         try {
             TsptwInstance instance = TsptwParser.fromFile(fname);
+            this.nNodes = instance.nbNodes;
             TsptwSolver solver     = new TsptwSolver(instance, timeout);
             solver.setVerbosity(verbosity);
             solver.setSeed(seed);
@@ -171,18 +173,25 @@ public class Main {
     @Override
     public String toString() {
         StringJoiner join = new StringJoiner(" ");
-        Arrays.stream(solution)
-                .skip(1)
-                .forEach(x -> join.add(""+x));
+        String elapsed;
+        if (solution == null) {
+            IntStream.range(1, nNodes).forEach(x -> join.add("0"));
+            elapsed = "timeout";
+        } else {
+            Arrays.stream(solution)
+                    .skip(1)
+                    .forEach(x -> join.add(""+x));
+            elapsed = String.format("%10.2f", elapsedTime());
+        }
 
         String solution = join.toString();
 
-        return String.format("%10s | %10s | %10s | %10.2f | %10.2f | %s",
+        return String.format("%10s | %10s | %10s | %10.2f | %s | %s",
                 instanceName(fname),
                 "sequence",
                 status(),
                 objective,
-                elapsedTime(),
+                elapsed,
                 crashed ? error : solution);
     }
 

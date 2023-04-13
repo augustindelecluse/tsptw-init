@@ -30,7 +30,7 @@ public class TSPBenchmark {
 
     private static final Map<MODE, ModeSetup> modeSetup = Map.of(
             MODE.SATISFY, new ModeSetup(100, 300, "initial"),
-            MODE.GREEDY, new ModeSetup(1, 10, "greedy")
+            MODE.GREEDY, new ModeSetup(1, 100, "greedy")
     );
 
     private static final String instancePath = "data/TSPTW/instances"; // path to the instances folder
@@ -440,7 +440,7 @@ public class TSPBenchmark {
     public static void main(String[] args) {
         TSPBenchmark benchmark = new TSPBenchmark();
         benchmark.solve_satisfy();
-        //benchmark.solve_greedy();
+        benchmark.solve_greedy();
     }
 
 }
