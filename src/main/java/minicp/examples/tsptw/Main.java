@@ -67,10 +67,10 @@ public class Main {
         CommandLine cli = cli(args);
 
         String fname   = cli.getOptionValue("f");
-        int    timeout = Integer.parseInt(cli.getOptionValue("t", "600"));
+        int    timeout = Integer.parseInt(cli.getOptionValue("t", "300"));
         long seed = Long.parseLong(cli.getOptionValue("r", String.valueOf(42)));
-        int verbosity = Integer.parseInt(cli.getOptionValue("v", String.valueOf(1)));
-        String methodStr = cli.getOptionValue("m", "optimize");
+        int verbosity = Integer.parseInt(cli.getOptionValue("v", String.valueOf(0)));
+        String methodStr = cli.getOptionValue("m", "satisfy");
         Method method = null;
         switch (methodStr.toLowerCase(Locale.ROOT)) {
             case "satisfy" -> method = Method.SATISFY;

@@ -68,7 +68,7 @@
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
-                            <mainClass>minicp.examples.tsptw.TSPBenchmark</mainClass>
+                            <mainClass>minicp.examples.tsptw.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

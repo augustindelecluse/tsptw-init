@@ -6,16 +6,11 @@
 
 # README #
 
-* This repository contains the source code from Augustin Delecluse, Pierre Schaus, and Pascal Van Hentenryck. Sequence variables for routing problems.
-  *In 28th International Conference on Principles and Practice of Constraint Programming (CP
-  2022)*, 2022.
-* The jar executable can be found in the `out/artifacts` folder
-* All jar executables have been built using java 17, but can be rebuilt using java 8.
+* This repository contains the source code of SEQUOIA, an algorithm providing initial solutions to a TSPTW instance.
 * The code in this repository has been built from MiniCP
 * MiniCP technical documentation, exercises etc 
 can be found at www.minicp.org
 * MiniCP is a Java project build with maven https://maven.apache.org
-
 
 
 System Requirements
@@ -71,7 +66,7 @@ mvn clean compile assembly:single
 to build the executable. You can run it with
 
 ```
-javar -jar target/maxicp-0.0.1.jar
+java -jar target/minicp-1.0.jar 
 ```
 
 The exact path to the executable might change depending on the naming / versioning. It is printed as the end of the compilation step
@@ -85,7 +80,29 @@ java -jar target/minicp-1.0.jar -f data/TSPTW/instances/Dumas/n200w40.002.txt
 Gives an output similar to
 
 ```
-data/PCTSP/size_20/data_10.txt | 49808.000 | 0.279 | suboptimal | 6 -> 14 -> 18 -> 5 -> 19 -> 16 -> 15 -> 13 -> 7 -> 17 -> 9 -> 3 -> 8 -> 0 -> 11 -> 12 -> 10 | 1 2 4 10 | 42 | OPT
+Dumas/n200w40.002.txt |   sequence |       open |    1084.00 |       0.42 | 77 173 83 85 43 65 56 38 1 25 128 174 91 15 148 68 40 198 34 184 102 151 140 61 195 108 161 4 82 67 20 35 110 145 167 119 120 196 171 39 129 199 53 21 158 12 50 44 147 54 93 92 124 31 14 118 7 64 66 186 104 10 111 178 28 100 146 5 99 130 48 9 70 123 79 23 69 125 86 176 159 138 115 42 60 187 17 116 36 190 194 131 109 76 26 166 114 160 139 94 71 164 106 29 122 175 90 153 81 117 137 89 84 63 2 52 80 72 57 150 19 143 180 32 113 192 152 6 74 97 132 127 142 182 18 126 169 78 105 95 157 96 41 75 3 58 49 88 133 73 55 87 46 11 16 135 189 134 181 168 33 197 37 30 155 103 45 165 172 62 156 8 162 101 59 112 188 179 22 107 24 154 170 185 121 136 13 144 193 191 163 183 98 51 47 27 177 200 149 141
+```
+
+showing 
+- the instance
+- the name of the underlying technology
+- a string indicating if the traveled distance is optimal (close) or not proven optimal (open). SEQUOIA only produces open solutions with respect to the traveled distance.
+- the traveled distance
+- the run time in seconds for solving the instance
+- the ordering of customers in the solution. 
+
+### Options
+
+Several options can be given as input:
+
+```
+-f filename     path to the instance to solve
+-v verbosity    controls the verbosity level expressed as an int: the higher, the more information printed. 
+                Use 1 to get more information about the iterations of the underlying algorithm.
+-r seed         provides a seed for random number generation (default uses a fixed constant seed)
+-t timeout      constrols the timeout, in seconds
+-m method       where method is either "greedy", providing a path that may not visit all nodes, 
+                or "satisfy", providing a path visiting all the nodes 
 ```
 
 Using an IntelliJ idea editor
@@ -101,13 +118,11 @@ Content
 -------------
 
 ```
-./src/main/java/                        # the implementation of mini-cp
-./src/main/java/minicp/engine/constraints/sequence/   # constraints on sequences
-./src/main/java/minicp/engine/core/     # variables implementations (including SequenceVar)
-./src/main/java/minicp/examples/darp/   # DARP models
-./src/main/java/minicp/examples/ptp/    # PTP model
-./src/main/java/minicp/examples/tsptw/  # TSPTW model
-./src/test/java/                        # the test suite
-./data/                                 # input instances
+./src/main/java/                                        # the implementation of mini-cp
+./src/main/java/minicp/engine/constraints/sequence/     # constraints on sequences
+./src/main/java/minicp/engine/core/                     # variables implementations (including SequenceVar)
+./src/main/java/minicp/examples/tsptw/                  # TSPTW model
+./src/test/java/                                        # the test suite
+./data/                                                 # input instances
 ```
 
